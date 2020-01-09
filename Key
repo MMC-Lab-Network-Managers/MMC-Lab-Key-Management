@@ -1,0 +1,11 @@
+Server:
+SWMaster MMCLab201!
+vdsadmin MMCLab201!
+gandalf Huawei@CLOUD8
+root Huawei@CLOUD8!
+
+Network Devices:
+switch username:无  key: MMClab@201203
+
+Controler
+admin Admin@storage
