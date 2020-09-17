@@ -7,6 +7,13 @@ FA-LOGGETTERTCM SWMaster Xidian1234
 FA-ADDNSDHCP-01 Administrator Xidian1234
 FA-ADDNSDHCP-02 Administrator Xidian1234
 FA-ADDNSDHCP 还原模式 MMCcloud201！
+vdesktop/vdsadmin MMCLab201!
+vdesktop/loguser MMCLab206!
+vdesktop/LogServiceUser MMCLab206!
+vdesktop/ITAServiceUser MMCLab206!
+vdesktop/itauser MMCLab206!
+
+
 
 Network Devices:
 switch username:无  key: MMClab@201203
