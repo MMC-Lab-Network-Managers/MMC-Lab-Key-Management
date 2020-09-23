@@ -30,5 +30,12 @@ admin Admin@storage
 
 /////////////////////////////////
 New ADDNSDHCP
-FA-ADDNSDHCP2-01 SWMaster Xidian1234
-FA-ADDNSDHCP2-02 SWMaster Xidian1234
+FA-ADDNSDHCP01 SWMaster Xidian1234
+FA-ADDNSDHCP02 SWMaster Xidian1234
+
+vdesktop/vdsadmin MMCLab203!
+vdesktop/loguser MMCLab203!
+vdesktop/LogServiceUser MMCLab203!
+vdesktop/ITAServiceUser MMCLab203!
+vdesktop/itauser MMCLab203!
+vdesktop/vdesktop_user MMCLab203!
