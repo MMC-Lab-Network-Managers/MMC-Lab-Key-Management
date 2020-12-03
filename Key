@@ -9,7 +9,7 @@ FA-vAGvLB root Huawei@CLOUD8!
 
 
 
-Network Devices:
+Huawei@CLOUD8!Network Devices:
 switch username:无  key: MMClab@201203
 
 Controler
@@ -44,3 +44,34 @@ FA-ITA SWMaster Labcloud201!
 ConfBack_User Huawei123#
 FusionAccess admin MMCLab@201203
 FusionCompute admin MMCLab@201203
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+
+
+目录服务还原模式密码：MMCLab@201203
+ 
+FA-DBHDCWILI  192.168.4.41
+FA-DBHDCWILI2 192.168.4.42
+
+域名：vdesktop.mmclab.com
+
+vdsadmin MMCLab203!
+
+FA-DBHDCWILI  root Huawei@CLOUD8
+FA-DBHDCWILI2 root Huawei@CLOUD8
+
+FA-vAGvLB  192.168.4.43 192.168.4.45
+FA-vAGvLB2 192.168.4.44 192.168.4.46
+FA-vAGvLB root Huawei@CLOUD8!
+
+FusionAccess 配置虚拟化环境->FusionCompute提供的北向接口认证帐号及密码:  vdisysman VdiEnginE@234
+
+Administrator Xidian1234
+
+FA-Backup 192.168.4.47 root Huawei@CLOUD8
+FA-TCM    192.168.4.48 root Huawei@CLOUD8
