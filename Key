@@ -1,77 +1,81 @@
-Server:
-SWMaster MMCLab202!
-vdsadmin MMCLab201!
-gandalf Huawei@CLOUD8
-root Huawei@CLOUD8!
+FusionCompute V100R006C10 & FusionAccess V100R006C20
+                       2020.12
 
-FA-DBHDCWILI root Huawei@CLOUD8!
-FA-vAGvLB root Huawei@CLOUD8!
+OceanStor登录存储设备：  admin  Admin@storage
 
+iMana200：  root  Huawei12#$
 
+CNA001/CNA002/VRM1/VRM2
+gandalf  Huawei@CLOUD8
+root  Huawei@CLOUD8！
 
-Huawei@CLOUD8!Network Devices:
-switch username:无  key: MMClab@201203
+FusionAccess：admin  MMCLab@201203
+FusionCompute：admin  MMCLab@201203
 
-Controler
-admin Admin@storage
+AD/DNS/DHCP
+主服务器：
+虚拟机名称   FA-AD-01   计算机名称  FA-2012AD-1 
+业务平面IP  192.168.4.31  管理平面IP  192.168.4.33
+登录  Administrator  Xidian1234
 
-
-/////////////////////////////////
-New ADDNSDHCP
-FA-ADDNSDHCP01 SWMaster Xidian1234
-FA-ADDNSDHCP02 SWMaster Xidian1234
-
-vdesktop/vdsadmin MMCLab203!
-vdesktop/loguser MMCLab203!
-vdesktop/LogServiceUser MMCLab203!
-vdesktop/ITAServiceUser MMCLab203!
-vdesktop/itauser MMCLab203!
-vdesktop/vdesktop_user MMCLab203!
-
-//////////////////////////////////////////////
-/////////////////////////////////
-New ADDNSDHCP 2020.9.24
-ADDNSDHCP01 SWMaster Xidian1234
-ADDNSDHCP02 SWMaster Xidian1234
-
-newvdesktop/newvdsadmin MMCLab203!
-newvdesktop/newloguser MMCLab203!
-newvdesktop/newLogServiceUser MMCLab203!
-newvdesktop/newITAServiceUser MMCLab203!
-newvdesktop/newitauser MMCLab203!
-newvdesktop/newvdesktop_user MMCLab203!
-FA-ITA SWMaster Labcloud201!
-ConfBack_User Huawei123#
-FusionAccess admin MMCLab@201203
-FusionCompute admin MMCLab@201203
-
-
-
-
-
-
-//////////////////////////////////////////////////////////
-
-
-目录服务还原模式密码：MMCLab@201203
- 
-FA-DBHDCWILI  192.168.4.41
-FA-DBHDCWILI2 192.168.4.42
+备服务器：
+虚拟机名称   FA-AD-02   计算机名称  FA-2012AD-2
+业务平面IP  192.168.4.32	 管理平面IP  192.168.4.34
+登录  Administrator  Xidian1234
 
 域名：vdesktop.mmclab.com
+目录服务还原模式（DSRM）密码  MMCLab@201203
+域管理： vdsadmin  MMCLab203！
 
-vdsadmin MMCLab203!
+ITA/GaussDB/HDC/WI/License
+主服务器：
+名称  FA-DBHDCWILI
+业务平面IP  192.168.4.41
+登录  root  Huawei@CLOUD8
 
-FA-DBHDCWILI  root Huawei@CLOUD8
-FA-DBHDCWILI2 root Huawei@CLOUD8
+备服务器：
+名称  FA-DBHDCWILI2
+业务平面IP  192.168.4.42
+登录  root  Huawei@CLOUD8
 
-FA-vAGvLB  192.168.4.43 192.168.4.45
-FA-vAGvLB2 192.168.4.44 192.168.4.46
-FA-vAGvLB root Huawei@CLOUD8!
+安装GaussDB时，会自动创建三个数据库帐号：GaussDB管理员帐号，用户名为“gaussdba”与“fauser”，密码为“Cloud12#$”，HDC数据库实例的帐号，用户名“hdcdbuser”，密码为“Cloud12#$”
 
-FusionAccess 配置虚拟化环境->FusionCompute提供的北向接口认证帐号及密码:  vdisysman VdiEnginE@234
+备DBHDCWILI服务器 安装ITA/GaussDB/HDC/WI/License
+Peer Password for gandalf 默认账号密码  gandalf  Cloud12#$
 
-Administrator Xidian1234
+vAG/vLB
+主服务器：
+名称  FA-vAGvLB
+业务平面IP  192.168.4.43  管理平面IP  192.168.4.45
+登录  root  Huawei@CLOUD8
 
-FA-Backup 192.168.4.47 root Huawei@CLOUD8
-FA-TCM    192.168.4.48 root Huawei@CLOUD8
+备服务器：
+名称  FA-vAGvLB2
+业务平面IP  192.168.4.44 管理平面IP  192.168.4.46
+登录  root  Huawei@CLOUD8
+
+Backup
+名称  FA-Backup
+业务平面IP  192.168.4.47
+登录  root  Huawei@CLOUD8
+
+TCM
+名称  FA-TCM
+业务平面IP  192.168.4.48
+登录  root  Huawei@CLOUD8
+
+FusionAccess 配置虚拟化环境->FusionCompute  帐号及密码:  
+vdisysman  VdiEnginE@234
+
+FusionAccess 配置vAG/vLB  SSH账户及密码：
+gandalf  Cloud12#$
+
+FusionAccess 配置备份服务器
+Backup Server备份服务器，默认用户名及密码：
+ConfBack_user  Cloud12#$
+SSH账户及密码：
+gandalf  Cloud12#$
+
+
+CCCM管理操作系统
+admin  MMCLab@201203
