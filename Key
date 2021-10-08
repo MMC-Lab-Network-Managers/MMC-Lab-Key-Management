@@ -16,7 +16,7 @@ AD/DNS/DHCP
 主服务器：
 虚拟机名称   FA-AD-01   计算机名称  FA-2012AD-1 
 业务平面IP  192.168.4.31  管理平面IP  192.168.4.33
-登录  Administrator  Xidian1234
+登录  Administrator  Xidian123456
 
 备服务器：
 虚拟机名称   FA-AD-02   计算机名称  FA-2012AD-2
